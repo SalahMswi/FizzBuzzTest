@@ -1,36 +1,31 @@
 /**
  * Created by SAM3505 on 10/08/2016.
  */
-var fizzBuzz = require('../lib/fizzbuzz');
+var versions = require('../lib/fizzbuzz');
 
-describe("the tests of fizzBuzz project", function () {
+describe("the tests of fizzBuzz test", function () {
 
-    // it("should return the numbers from 1 to 100", function () {
-    //     var numbers = fizzBuzz();
-    //     for (var i = 0; i < numbers.length; i++) {
-    //         expect(i+1).toBe(numbers[i]);
-    //     }
-    // })
+    //NB: to launch the tests you have to install "jasmine" by a package manager like the npm .
+    //After you have to put "jasmine-node spec/" in the terminal of intellijIDEA or Git bash.
 
-
-    // it("should return the Fizz the number is multiple o three", function () {
-    //     var numbers = fizzBuzz();
-    //     console.log(fizzBuzz());
-    //     console.log(10%5)
-    //     expect("Fizz").toBe(numbers[2]);//pour le 3
-    //     expect("Fizz").toBe(numbers[8]);//pour le 9
-    //     expect("Buzz").toBe(numbers[4]);//pour le 5
-    //     expect("Buzz").toBe(numbers[9]);//pour le 10
-    // })
-
-    it("should return the Fizz or Buzz or FizzBuzz the number is multiple o three", function () {
-        var numbers = fizzBuzz();
+    //Test of version1
+    it("should return Fizz or Buzz instead of the number in the table if it's a multiple of 3 or 5", function () {
+        var numbers = versions[0]();
         expect("Fizz").toBe(numbers[2]);//pour le 3
         expect("Fizz").toBe(numbers[8]);//pour le 9
         expect("Buzz").toBe(numbers[4]);//pour le 5
         expect("Buzz").toBe(numbers[9]);//pour le 10
-        expect("FizzBuzz").toBe(numbers[14]);//pour le 15
-        expect("FizzBuzz").toBe(numbers[44]);//pour le 45
+    })
+
+    //Test of version2
+    it("should return Fizz or Buzz or FizzBuzz instead of the number in the table if it's a multiple of 3 or 5 or of the both", function () {
+        var numbers = versions[1]();
+        expect("Fizz").toBe(numbers[2]);//3:it's multiple of 3.
+        expect("Fizz").toBe(numbers[8]);//9:it's multiple of 3.
+        expect("Buzz").toBe(numbers[4]);//5:it's multiple of 5.
+        expect("Buzz").toBe(numbers[9]);//10:it's multiple of 5.
+        expect("FizzBuzz").toBe(numbers[14]);//15:it's multiple of 3 and 5.
+        expect("FizzBuzz").toBe(numbers[44]);//45:it's multiple of 3 and 5.
     })
 
 });
