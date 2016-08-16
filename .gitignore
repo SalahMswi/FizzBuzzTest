@@ -1,5 +1,8 @@
-# OS X
-.DS_Store
-
 # npm
 node_modules/
+*.log
+*gz
+
+# Intellij & webStorm
+.idea/
+*.iml
