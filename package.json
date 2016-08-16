@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/SalahMswi/FizzBuzzTest/issues"
   },
-  "homepage": "https://github.com/SalahMswi/FizzBuzzTest#readme"
+  "homepage": "https://github.com/SalahMswi/FizzBuzzTest#readme",
+  "dependencies": {
+    "jasmine-node": "^1.14.5"
+  }
 }

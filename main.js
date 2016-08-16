@@ -7,4 +7,3 @@ console.log("version3 with (3,5) same as the version2 :"+versions[2](3,5).toStri
 console.log("************************")
 console.log("version3 with (2,5) :"+versions[2](2,5).toString())
 console.log("************************")
-console.error("gg")
