@@ -1,9 +1,11 @@
 var versions = require('../lib/fizzbuzz');//versions is a table which contains the 3 versions
-console.log("version1 :"+versions[0]().toString())
+
+var scanf = require('scanf');
+
+console.log('Please enter the first parameter');
+var par1 = scanf('%s');
+console.log('Please enter the second parameter');
+var par2 = scanf('%s');
 console.log("************************")
-console.log("version2 :"+versions[1]().toString())
-console.log("************************")
-console.log("version3 with (3,5) same as the version2 :"+versions[2](3,5).toString())
-console.log("************************")
-console.log("version3 with (2,5) :"+versions[2](2,5).toString())
+console.log("version3 with ("+par1+","+par2+") :" + versions[2](par1, par2).toString())
 console.log("************************")
