@@ -1,5 +1,5 @@
 
-*********************************************FizzBuzz test********************************************************
+***************************************FizzBuzz test*********************************************
 This Kata aims to:
 Version 1:Return nombers between 1 and 100 with "Fizz" instead the number if is a multiple of 3 and "Buzz" if is a multiple of 5.
 Version 2:Return nombers between 1 and 100 with "Fizz" instead the number if is a multiple of 3 and "Buzz" if is a multiple of 5 and "FizzBuzz" if is as a multiple of both.  5 version 2 : returne nombres entre 1-100 mais "Fizz" au lieu de multiples de 3 et "Buzz" au lieu 5 et "FizzBuzz" au lieu de multiples de 3 et 5
@@ -15,6 +15,7 @@ To launch the application :
 put npm start
 
 To launch tests :
-then put npm test
+put npm test
 
-*******************************************************************************************************************
+*****************************************************************************************************
+
